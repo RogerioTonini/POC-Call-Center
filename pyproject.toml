@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "poc-call-center"
+version = "0.1.0"
+description = ""
+authors = ["Rogerio <rogerio.tonini@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+pandas = "^3.0.1"
+ipykernel = "^7.2.0"
+tabulate = "^0.10.0"
+python-dotenv = "^1.2.2"
+numpy = "^2.4.2"
+
+
+[tool.poetry.group.connection.dependencies]
+sqlalchemy = "^2.0.48"
+psycopg2-binary = "^2.9.11"
+mysql-connector-python = "^9.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
