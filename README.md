@@ -16,6 +16,14 @@
 
 - _**Arquivo origem:**_ _*tb_ligacao_202602271123.csv*_
 
+## Estrutura dos Dados e Estatísticas das informações
+
+![Estrutura e Estatísticas dos Dados](/docs/Estatisticas_Dados.md)
+
+## Relação das medidas utilizadas no Power BI
+
+![Medidas utilizadas no Power BI](/docs/Medidas_Documentacao.md)
+
 ## Atualização no GitHub - Push Inicial
 
 ### Commit: Estrutura inicial - Git
@@ -54,8 +62,8 @@ git commit -m "docs: adicionar documentação do projeto"
 ### Commit: app / noteboos / sql
 
 ```bash
-git add app/. notebook/. sql/.
-git commit -m "feat(app): criar estrutura base da aplicação"
+git add app/. notebooks/. sql/.
+git commit -m "feat(app): criar estrutura base da aplicação (notebooks, sql)"
 ```
 
 ### Commit: Testes - Se for criado
