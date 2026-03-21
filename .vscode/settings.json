@@ -21,7 +21,7 @@
     // Quebra de linha automática no editor
     "editor.wordWrap": "on",
     // Minimap (mapa do código à direita)
-    "editor.minimap.enabled": true,
+    "editor.minimap.enabled": false,
     // => ARQUIVOS - Salvamento e Codificação
     // Salva automaticamente após 1 minuto de inatividade
     "files.autoSave": "afterDelay",
@@ -149,7 +149,7 @@
     // Define Git Bash como terminal padrão
     "terminal.integrated.defaultProfile.windows": "Git Bash",
     // Tamanho da fonte no terminal
-    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.fontSize": 14,
     // Família de fontes no terminal
     "terminal.integrated.fontFamily": "JetBrains Mono, Consolas, monospace",
     // Diretório inicial do terminal (usa a pasta atual do workspace)
@@ -194,16 +194,30 @@
             "other": "off"
         }
     },
+    // Abre arquivos .md diretamente no visualizador Markdown (preview) por padrão
+    "workbench.editorAssociations": {
+        "*.md": "vscode.markdown.preview.editor"
+    },
     // => INTERFACE - Tema e Ícones
     // Tema de ícones de arquivos
     "workbench.iconTheme": "vscode-icons",
+    // Detecta automaticamente o esquema de cores do SO (claro/escuro)
+    // Faz o VS Code (e o preview Markdown) seguir o modo escuro do Windows
+    "window.autoDetectColorScheme": true,
+    // Tema usado quando o SO está em modo escuro
+    "workbench.preferredDarkColorTheme": "Default Dark Modern",
+    // Tema usado quando o SO está em modo claro
+    "workbench.preferredLightColorTheme": "Default Light Modern",
     // => SPELL CHECKER - Verificação Ortográfica
     // Idiomas ativos no spell checker
     "cSpell.language": "en,pt-BR",
-    // Onde verificar ortografia
-    // "cSpell.enableFiletypes": [
-    //     "markdown",
-    //     "python",
-    //     "shellscript"
-    // ]
+    "cSpell.words": [
+        "pbix"
+    ],
+    // Onde verificar ortografia (tipos de arquivo habilitados para spell check)
+    "cSpell.enabledFileTypes": {
+        "markdown": true,
+        "python": true,
+        "shellscript": true
+    }
 }
