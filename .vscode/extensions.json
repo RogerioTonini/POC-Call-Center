@@ -48,7 +48,6 @@
         "pkief.material-icon-theme", // Tema alternativo de ícones
 
         // => UTILIDADES
-        "gruntfuggly.todo-tree", // Visualiza TODOs e FIXMEs
         "aaron-bond.better-comments", // Comentários coloridos
         "oderwat.indent-rainbow", // Colorização de indentação
         "wayou.vscode-todo-highlight", // Destaca TODOs
